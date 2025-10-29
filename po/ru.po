@@ -1,0 +1,3 @@
+#: extension.js:36
+msgid "Boost Volume"
+msgstr "Экстра-громкость"

@@ -1,13 +1,10 @@
 UUID := $(shell cat metadata.json | jq -r .uuid)
-SRC  := extension.js metadata.json
-INSTDIR := ~/.local/share/gnome-shell/extensions/$(UUID)
 
 all: zip
 
 .PHONY: install
-install:
-	mkdir -pv $(INSTDIR)
-	cp -v $(SRC) $(INSTDIR)
+install: zip
+	gnome-extensions install -f *.zip
 
 .PHONY: uninstall
 uninstall:
@@ -16,4 +13,4 @@ uninstall:
 .PHONY: zip
 zip:
 	rm -f $(UUID).zip
-	zip -j $(UUID).zip $(SRC)
+	gnome-extensions pack .
