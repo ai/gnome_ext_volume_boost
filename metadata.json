@@ -5,7 +5,9 @@
   "uuid": "volumeBoosr@octane-laurel",
   "shell-version": [
 		"46",
-		"47"
+		"47",
+		"48",
+		"49"
 	],
   "url": "https://github.com/NormTurtle/gnome_ext_volume_boost"
 }
