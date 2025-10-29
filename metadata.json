@@ -3,6 +3,7 @@
   "description":
   "A toggle to Boosts volume above limits | Fork of https://github.com/shaquibimdad/gnome_ext_volume_boost",
   "uuid": "volumeBoosr@octane-laurel",
+  "gettext-domain": "gnome_ext_volume_boost",
   "shell-version": [
 		"46",
 		"47"
